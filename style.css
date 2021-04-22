@@ -46,6 +46,8 @@ header {
 #groscontainer{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
 }
  
 /* #populaires = .container:nth-child(1)
@@ -56,54 +58,77 @@ header {
     background-color: grey;
     border-radius: 20px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    max-height: 40em;
+    max-height: 50em;
+    justify-content: space-around;
 }
-
-.container:nth-child(1){
-    order: 2;
-    width: 27%;
-}
-
-.container:nth-child(2){
-    order: 1;
-    width: 66%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.container:nth-child(3){
-    order: 3;
-}
-
 
 .aside {
     background-color: white;
     border-radius: 20px;
     margin: 10px;
+    border: white 5px solid;
 }
+
+.container:nth-child(1){
+    order: 2;
+    width: 28%;
+}
+.container:nth-child(1) .aside{
+    height: 25%;
+    width:100%;
+    overflow: hidden;
+    display: flex;
+    margin: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.gauche{
+    height: 100%;
+    width: 25%;
+    float: left;
+    overflow: hidden;
+}
+.droite{
+    background-color: white;
+}
+
+.container:nth-child(1) img{
+    height: 100%;
+    float: left;
+}
+
+
+.container:nth-child(2){
+    order: 1;
+    width: 68%;
+}
+
+.container:nth-child(3){
+    order: 3;
+    width: 98%;
+}
+
+
+
+
 
 .container:nth-child(2) .aside{
     width: 30%;
     display: flexbox;
-    
+    overflow: hidden;
+    text-align: center;
 }
 
-.container:nth-child(1) img{
-    height: 10em;
-    float: left;
-}
+
 .container:nth-child(2) img{
-    height:10em;
+    width: 100%;
+    max-height: 8em;
 }
 
 .container:nth-child(3) img{
     height: 10em;
-}
-
-ul{
-    list-style-type: none;
 }
 
 .ligne{
