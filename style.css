@@ -1,0 +1,96 @@
+*{
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+}
+
+#recherche {
+    border: solid 1px;
+    border-radius : 20px ;
+}
+
+
+#filtres {
+    display: inline-block;
+    border: solid #f2f2f2 2px;
+    border-radius : 20px;
+    margin: 5px;
+    padding: 0px;
+}
+
+#filtres .fas{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+#filtres:hover {
+
+    background-color: #DEEBFF;
+}
+
+#nombre .fas{
+    color: white;
+    background-color: #0065FC;
+    border-radius: 50%;
+    border-color: #F2F2F2;
+    border-width: 1px;
+    border-style: solid;
+}
+
+/*______________________________________*/
+
+#groscontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+/* #populaires = .container:nth-child(1)
+#hebergements= .container:nth-child(2)
+#activites=.container:nth-child(3) */
+
+.container {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container:nth-child(1){
+    order: 2;
+    width: 27%;
+}
+
+.container:nth-child(2){
+    order: 1;
+    width: 66%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container:nth-child(3){
+    order: 3;
+}
+
+
+.aside {
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.container:nth-child(2) .aside{
+    width: 30%;
+}
+
+.container:nth-child(1) img{
+    width: 80%;
+}
+.container:nth-child(2) img{
+    width: 100%;
+}
+
