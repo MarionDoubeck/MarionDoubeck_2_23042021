@@ -1,14 +1,37 @@
 *{
     text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+header{
+    position: fixed;
+    background-color: white;
+    top: 0;
+    padding-top: 30px;
 }
 
-header {
-    display: flex;
+#section1{
+    margin-top: 100px;
+}
+
+#inscription{
+    position: absolute;
+    top: 30px;
+    right: 60px;
+}
+
+#menu{
+
 }
 
 #recherche {
     border: solid 1px;
     border-radius : 20px ;
+}
+
+button{
+    color: white;
+    background-color: blue;
 }
 
 
