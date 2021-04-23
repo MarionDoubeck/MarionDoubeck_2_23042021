@@ -9,8 +9,6 @@
 
 *{
     text-decoration: none;
-    padding-left: 5px;
-    padding-right: 5px;
     font-family: 'Raleway-Regular', sans-serif;
 }
 header{
@@ -21,7 +19,7 @@ header{
 }
 
 #section1{
-    margin-top: 100px;
+    margin-top: 130px;
 }
 #header img{
     position: absolute;
@@ -35,33 +33,50 @@ header{
 }
 
 #menu{
-
+    float: right;
+    margin-right: 10em;
 }
 
 strong,h4{
     font-family: 'Raleway-Bold';
 }
+#titre{
+    line-height: 0.3em;
+}
+
 #recherche {
-    border: solid 1px;
+    border-color: #f2f2f2;
     border-radius : 20px ;
     display: flex;
     width: fit-content;
     height: fit-content;
     overflow: hidden;
+    height: 3em;
+    width: 20em;
+    background-color: #f2f2f2;
+    margin-bottom: 1.3em;
+    margin-top: 1.5em;
 }
 #recherche .fas{
-    height: unset;
+    align-self: center;
+    text-align: center;
     background-color: #f2f2f2;
+    width: 10em;
+}
+#champ-de-recherche{
+    width: 50em;
+    border-color: #f2f2f2;
+    border: 1px 1px 1px 1px; /*marche pas probleme ombre*/
+    box-shadow: none; /*marche pas probleme ombre*/
+    font-family: 'Raleway-Bold';
 }
 #recherche-lieu{
-    height: 3em;
-}
-
-button{
-    height: 3em;
-    width: 100%;
+    border-color: #f2f2f2;
     color: white;
     background-color: blue;
+    border: 1px 1px 1px 1px; /*marche pas probleme ombre*/
+    box-shadow: none; /*marche pas probleme ombre*/
+    font-family: 'Raleway-Bold';
 }
 
 
@@ -71,6 +86,7 @@ button{
     border-radius : 20px;
     margin: 5px;
     padding: 0px;
+    margin-bottom: 1.3em;
 }
 
 #filtres .fas{
@@ -88,10 +104,11 @@ button{
 #info{
     color: white;
     background-color:#0065FC;
-    border-radius: 50%;     /*probleme*/
-    border-color: #F2F2F2;  /*probleme*/
-    border-width: 1px;      /*probleme*/
-    border-style: solid;    /*probleme*/
+    border-radius: 50%;     
+    border-color: #F2F2F2;  
+    border-width: 1px;      
+    border-style: solid;    
+    margin-bottom: 1.3em;
 }
 
 /*______________________________________*/
@@ -101,6 +118,7 @@ button{
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-between;
+    line-height: 0.2em;
 }
  
 /* #populaires = .container:nth-child(1)
@@ -141,8 +159,8 @@ button{
     width: 25%;
     float: left;
     overflow: hidden;
-    text-align: center; /*marche pas*/
-    margin: auto; /*marche pas*/
+    /* text-align: center; marche pas*/
+    /* margin: auto; marche pas*/
 }
 .droite{
     background-color: white;
@@ -152,7 +170,10 @@ button{
     height: 100%;
     float: left;
 }
-
+.container:nth-child(1) .fas{
+    float: right;
+    margin-right: 2em;
+}
 
 
 .container:nth-child(2){

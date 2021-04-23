@@ -20,15 +20,15 @@
 
     <!-- Section 1 Recherche -->
     <section id="section1">
-        <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
+        <h1 id="titre"><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
         <p>En plein centre ville ou en pleine nature</p> 
 
         <!-- barre de recherche -->
-        <span id="recherche">
+        <div id="recherche">
             <i class="fas fa-map-marker-alt"> </i>
-            <input type="search" id="recherche-lieu" placeholder="où allez-vous ?">
-            <button>Rechercher</button>
-        </span>
+            <input type="search" id="champ-de-recherche" placeholder="où allez-vous ?">
+            <input type="submit" id="recherche-lieu" value="Rechercher">
+        </div>
 
         <!-- filtres -->
         <div>
@@ -112,7 +112,7 @@
     </section>
 
     <!-- Section 3 : Hebergements  -->
-    <section class="container">
+    <section class="container" id="hebergements">
         <div class="ligne"><h1><strong>Hébergements à Marseilles</strong></h1></div>
         <div class="aside">
             <a href="#">
