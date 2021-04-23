@@ -1,7 +1,17 @@
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('police/static/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url('police/static/Raleway-Bold.ttf');
+}
+
 *{
     text-decoration: none;
     padding-left: 5px;
     padding-right: 5px;
+    font-family: 'Raleway-Regular', sans-serif;
 }
 header{
     position: fixed;
@@ -13,7 +23,11 @@ header{
 #section1{
     margin-top: 100px;
 }
-
+#header img{
+    position: absolute;
+    top: 30px;
+    left: 60px;
+}
 #inscription{
     position: absolute;
     top: 30px;
@@ -24,12 +38,28 @@ header{
 
 }
 
+strong,h4{
+    font-family: 'Raleway-Bold';
+}
 #recherche {
     border: solid 1px;
     border-radius : 20px ;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+}
+#recherche .fas{
+    height: unset;
+    background-color: #f2f2f2;
+}
+#recherche-lieu{
+    height: 3em;
 }
 
 button{
+    height: 3em;
+    width: 100%;
     color: white;
     background-color: blue;
 }
@@ -55,13 +85,13 @@ button{
     background-color: #DEEBFF;
 }
 
-#nombre .fas{
+#info{
     color: white;
-    background-color: #0065FC;
-    border-radius: 50%;
-    border-color: #F2F2F2;
-    border-width: 1px;
-    border-style: solid;
+    background-color:#0065FC;
+    border-radius: 50%;     /*probleme*/
+    border-color: #F2F2F2;  /*probleme*/
+    border-width: 1px;      /*probleme*/
+    border-style: solid;    /*probleme*/
 }
 
 /*______________________________________*/
@@ -78,7 +108,7 @@ button{
 #activites=.container:nth-child(3) */
 
 .container {
-    background-color: grey;
+    background-color: #f2f2f2;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -111,6 +141,8 @@ button{
     width: 25%;
     float: left;
     overflow: hidden;
+    text-align: center; /*marche pas*/
+    margin: auto; /*marche pas*/
 }
 .droite{
     background-color: white;
@@ -138,6 +170,8 @@ button{
     width: 100%;
     height: 50%;
     overflow: hidden;
+    text-align: center; /*marche pas*/
+    margin: auto; /*marche pas*/
 }
 .bas{
     background-color: white;
