@@ -33,15 +33,12 @@ header{
 }
 
 #menu{
-    float: right;
-    margin-right: 10em;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 strong,h4{
     font-family: 'Raleway-Bold';
-}
-#titre{
-    line-height: 0.3em;
 }
 
 #recherche {
@@ -81,10 +78,10 @@ strong,h4{
 
 
 #filtres {
-    display: inline-block;
+    display: block;
     border: solid #f2f2f2 2px;
     border-radius : 20px;
-    margin: 5px;
+    margin: 3px;
     padding: 0px;
     margin-bottom: 1.3em;
 }
@@ -132,6 +129,7 @@ strong,h4{
     flex-wrap: wrap;
     max-height: 40em;
     justify-content: space-around;
+    width: 90%;
 }
 
 .aside {
@@ -140,10 +138,6 @@ strong,h4{
     border: white 5px solid;
 }
 
-.container:nth-child(1){
-    order: 2;
-    width: 28%;
-}
 .container:nth-child(1) .aside{
     height: 25%;
     width:100%;
@@ -176,10 +170,6 @@ strong,h4{
 }
 
 
-.container:nth-child(2){
-    order: 1;
-    width: 68%;
-}
 
 .container:nth-child(2) .aside{
     width: 28%;
@@ -205,8 +195,6 @@ strong,h4{
 
 
 .container:nth-child(3){
-    order: 3;
-    width: 98%;
     margin-top: 50px;
     background-color: white;
 }
