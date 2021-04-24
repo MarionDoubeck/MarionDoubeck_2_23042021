@@ -11,6 +11,10 @@
     text-decoration: none;
     font-family: 'Raleway-Regular', sans-serif;
 }
+.ligne{
+    width: 100%;
+}
+
 header{
     background-color: white;
     padding-top: 30px;
@@ -32,9 +36,19 @@ header{
     margin-right: 10em;
 }
 
-strong,h4{
+strong,h1, h2, h3, h4{
     font-family: 'Raleway-Bold';
 }
+h1{
+    font-size: 1.3em;
+}
+h3{
+    font-size: 1.1em ;
+}
+h4{
+    font-size: 0.95em;
+}
+
 #titre{
     line-height: 0.3em;
 }
@@ -111,77 +125,125 @@ strong,h4{
 #container_hebergements_et_populaires{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    margin-left: 2em;
+    margin-right: 2em;
+    justify-content: space-between;
     align-content: space-between;
     line-height: 0.2em;
 }
  
 .hebergements_mrs, .les_plus_populaires{
-    background-color: grey;
+    background-color:#f2f2f2;
     border-radius: 20px;
-    max-height: 40em;
+    max-height: 38em;
     justify-content: space-around;
 }
 
 .hebergements_mrs{  
-    width: 68%;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 .les_plus_populaires{
-    width: 28%;
+    width: 32%;
     display: flex;
     flex-wrap: wrap;
 }
 /*________hebergements à Marseille____________*/
-.hebergements_mrs .aside{
-    width:25%;
-    height: 37%;
+#titre_heb{
+    padding-top: 1em;
+    width: 100%;
+}
+.hotel_heb{
+    width:29%;
+    height: 31%;
     border-radius: 20px;
     border: white 5px solid;
-    align-content: space-around;
-    overflow: hidden;
+    overflow: hidden;   
 }
-.haut{
-    height: 50%;
-    width: 100%;
-    overflow: hidden;
-}
-.bas{
-    height: 50%;
+.photo_heb{
+    height: 60%;
     width: 100%;
 }
-.hebergements_mrs .img{
+.photo_heb>img{
     width: 100%;
-}
-/*________populaires____________*/
-
-.hotel_pop{
-    width:20em;
-    height: 25%;
-    border-radius: 20px;
-    border: rgb(212, 19, 203) 5px solid;
-    justify-content: space-around;
-    display: flex;  
-}
-.lien{
-    flex-basis: 600px;
-    height: 100%;
-    width: 100%;
-}
-.photo{
-    width: 33%;
-    height: 100%;
-    overflow: hidden;
-}
-.description{
-    width: 66%;
-    height: 100%;
-}
-.les_plus_populaires .img{
     height: 100%;
     object-fit: cover;
 }
+.description_heb{
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    height: 40%;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border:white solid 3px; /*POURQUOI SANS CA MARCHE PAS?*/
+}
+.description_heb>p{
+    font-size: 0.9em;
+    line-height: 0.1em;
+}
+.alive_stars{
+    color: #0065FC;
+    align-self: flex-end;
+    font-size: 0.7em;
+}
+.dead_stars{
+    color: #F2F2F2;
+    align-self: flex-end;
+    font-size: 0.7em;
+}
+/*________populaires____________*/
+
+#titre_pop{
+    padding-top: 1em;
+    display: flex;
+    width: 20em;
+    justify-content: space-between;
+}
+
+#titre_pop>.fas{
+    font-size: 1.3em;
+    padding-top: 0.4em;
+}
+
+.hotel_pop{
+    width:20em;
+    height: 21%;
+    border-radius: 20px;
+    border:white 5px solid;
+    justify-content: space-around;
+    display: flex;  
+    overflow: hidden;
+}
+
+.photo{
+    width: 40%;
+    height: 100%;
+}
+.photo>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.description{
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 60%;
+    height: 100%;
+    line-height: 1.3em;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+}
+.description>p{
+    font-size: 0.9em;
+    line-height: 0.1em;
+}
+
 
 
 /*____________________________________*/
@@ -198,7 +260,6 @@ strong,h4{
     color: black ;
     text-decoration: none;
 }
-
 .activites .aside{
     padding: 0px;
     border: #F2F2F2 solid 1px;
@@ -209,11 +270,3 @@ strong,h4{
     width: 100%;
     max-width: 4em;
 }
-
-
-
-
-.ligne{
-    width: 100%;
-}
-
