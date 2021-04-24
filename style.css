@@ -116,7 +116,7 @@ strong,h4{
     line-height: 0.2em;
 }
  
-.hebergements_mrs, .les_plus_populaires, .activites{
+.hebergements_mrs, .les_plus_populaires{
     background-color: grey;
     border-radius: 20px;
     max-height: 40em;
@@ -192,18 +192,30 @@ strong,h4{
 
 .activites{
     width: 98%;
+    max-height: 40em;
     margin-top: 50px;
-    background-color: white;
+    background-color: blue;
+    border-radius: 20px;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    color: black ;
+    text-decoration: none;
 }
 
 .activites .aside{
     padding: 0px;
     border: #F2F2F2 solid 1px;
+    border-radius: 20px;
     display: flex;
 }
 .activites img{
-    height: 10em;
+    width: 100%;
+    max-width: 4em;
 }
+
+
+
 
 .ligne{
     width: 100%;
