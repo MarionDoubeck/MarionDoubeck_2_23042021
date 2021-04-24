@@ -108,7 +108,7 @@ strong,h4{
 
 /*______________________________________*/
 
-#groscontainer{
+#container_hebergements_et_populaires{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -123,14 +123,13 @@ strong,h4{
     justify-content: space-around;
 }
 
-.hebergements_mrs{  /*dans le premier bloc du gros container, aka hebergements, 
-                            les sous blocs seront en horizontal et passeront à la ligne*/
-    width: 67%;
+.hebergements_mrs{  
+    width: 68%;
     display: flex;
     flex-wrap: wrap;
 }
 .les_plus_populaires{
-    width: 27%;
+    width: 28%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -188,56 +187,7 @@ strong,h4{
     object-fit: cover;
 }
 
-/*
-.container:nth-child(2) .aside{
-    width: 28%;
-    height: 35%;
-    display: flex;
-    overflow: hidden;
-    order-radius: 20px;
-    border: white 5px solid;
-}
 
-.gauche:nth-child(2){
-    height: 100%;
-    width: 33%;
-    overflow: hidden;
-}
-
-.gauche:nth-child(2){
-    background-color: blue;
-    width: 65%;
-}
-
-.container:nth-child(2) img{
-    height: 100%;
-    float: left;
-}
-
-.container:nth-child(2) .fas{
-    float: right;
-    margin-right: 2em;
-}
-
-
-
-
-
-.haut{
-    width: 100%;
-    height: 50%;
-    overflow: hidden;
-
-}
-.bas{
-    background-color: white;
-}
-
-.container:nth-child(2) img{
-    width: 100%;
-}
-
-*/
 /*____________________________________*/
 
 .activites{
