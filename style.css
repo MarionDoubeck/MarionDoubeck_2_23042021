@@ -159,17 +159,18 @@ strong,h4{
 
 .hotel_pop{
     width:20em;
-    height: 27%;
+    height: 25%;
     border-radius: 20px;
     border: rgb(212, 19, 203) 5px solid;
-    align-content: space-around;
-    display: flex;   
+    justify-content: space-around;
+    display: flex;  
 }
-.hotel_pop a{
-    display: block;
-    width: 100%;
+.lien{
+    flex-basis: 600px;
     height: 100%;
-    border: yellow 5px solid;
+    width: 100%;
+    border: yellow solid 3px;
+    opacity: 0.5;
 }
 .photo{
     width: 33%;
@@ -184,6 +185,7 @@ strong,h4{
 }
 .les_plus_populaires .img{
     height: 100%;
+    object-fit: cover;
 }
 
 /*
@@ -256,3 +258,4 @@ strong,h4{
 .ligne{
     width: 100%;
 }
+
