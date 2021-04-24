@@ -12,15 +12,10 @@
     font-family: 'Raleway-Regular', sans-serif;
 }
 header{
-    position: fixed;
     background-color: white;
-    top: 0;
     padding-top: 30px;
 }
 
-#corps{
-    padding-top: 130px;   /*probleme avec les ancres*/
-}
 #header img{
     position: absolute;
     top: 30px;
@@ -121,78 +116,116 @@ strong,h4{
     line-height: 0.2em;
 }
  
-/* #populaires = .container:nth-child(1)
-#hebergements= .container:nth-child(2)
-#activites=.container:nth-child(3) */
-
-.container {
-    background-color: #f2f2f2;
+.hebergements_mrs, .les_plus_populaires, .activites{
+    background-color: grey;
     border-radius: 20px;
-    display: flex;
-    flex-wrap: wrap;
     max-height: 40em;
     justify-content: space-around;
 }
 
-.aside {
-    background-color: white;
+.hebergements_mrs{  /*dans le premier bloc du gros container, aka hebergements, 
+                            les sous blocs seront en horizontal et passeront à la ligne*/
+    width: 67%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.les_plus_populaires{
+    width: 27%;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*________hebergements à Marseille____________*/
+.hebergements_mrs .aside{
+    width:25%;
+    height: 37%;
     border-radius: 20px;
     border: white 5px solid;
-}
-
-.container:nth-child(1){
-    order: 2;
-    width: 28%;
-}
-.container:nth-child(1) .aside{
-    height: 25%;
-    width:100%;
+    align-content: space-around;
     overflow: hidden;
-    display: flex;
-    margin: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
-
-.gauche{
-    height: 100%;
-    width: 25%;
-    float: left;
+.haut{
+    height: 50%;
+    width: 100%;
     overflow: hidden;
-    /* text-align: center; marche pas*/
-    /* margin: auto; marche pas*/
 }
-.droite{
-    background-color: white;
+.bas{
+    height: 50%;
+    width: 100%;
 }
+.hebergements_mrs .img{
+    width: 100%;
+}
+/*________populaires____________*/
 
-.container:nth-child(1) img{
+.hotel_pop{
+    width:20em;
+    height: 27%;
+    border-radius: 20px;
+    border: rgb(212, 19, 203) 5px solid;
+    align-content: space-around;
+    display: flex;   
+}
+.hotel_pop a{
+    display: block;
+    width: 100%;
     height: 100%;
-    float: left;
+    border: yellow 5px solid;
 }
-.container:nth-child(1) .fas{
-    float: right;
-    margin-right: 2em;
+.photo{
+    width: 33%;
+    height: 94%;
+    overflow: hidden;
+    border: red solid 5px;
+}
+.description{
+    width: 66%;
+    height: 94%;
+    border: blue solid 5px;
+}
+.les_plus_populaires .img{
+    height: 100%;
 }
 
-
-.container:nth-child(2){
-    order: 1;
-    width: 68%;
-}
-
+/*
 .container:nth-child(2) .aside{
     width: 28%;
     height: 35%;
     display: flex;
     overflow: hidden;
+    order-radius: 20px;
+    border: white 5px solid;
 }
+
+.gauche:nth-child(2){
+    height: 100%;
+    width: 33%;
+    overflow: hidden;
+}
+
+.gauche:nth-child(2){
+    background-color: blue;
+    width: 65%;
+}
+
+.container:nth-child(2) img{
+    height: 100%;
+    float: left;
+}
+
+.container:nth-child(2) .fas{
+    float: right;
+    margin-right: 2em;
+}
+
+
+
+
+
 .haut{
     width: 100%;
     height: 50%;
     overflow: hidden;
-    text-align: center; /*marche pas*/
-    margin: auto; /*marche pas*/
+
 }
 .bas{
     background-color: white;
@@ -202,20 +235,21 @@ strong,h4{
     width: 100%;
 }
 
+*/
+/*____________________________________*/
 
-
-.container:nth-child(3){
-    order: 3;
+.activites{
     width: 98%;
     margin-top: 50px;
     background-color: white;
 }
 
-.container:nth-child(3) .aside{
+.activites .aside{
     padding: 0px;
     border: #F2F2F2 solid 1px;
+    display: flex;
 }
-.container:nth-child(3) img{
+.activites img{
     height: 10em;
 }
 

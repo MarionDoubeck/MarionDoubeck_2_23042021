@@ -159,6 +159,15 @@ strong,h4{
 .droite{
     background-color: white;
 }
+.container:nth-child(1){
+    order: 2;
+}
+.container:nth-child(2){
+    order: 1;
+}
+.container:nth-child(3){
+    order: 3;
+}
 
 .container:nth-child(1) img{
     height: 100%;
