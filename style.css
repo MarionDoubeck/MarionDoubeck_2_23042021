@@ -168,19 +168,15 @@ strong,h4{
     flex-basis: 600px;
     height: 100%;
     width: 100%;
-    border: yellow solid 3px;
-    opacity: 0.5;
 }
 .photo{
     width: 33%;
-    height: 94%;
+    height: 100%;
     overflow: hidden;
-    border: red solid 5px;
 }
 .description{
     width: 66%;
-    height: 94%;
-    border: blue solid 5px;
+    height: 100%;
 }
 .les_plus_populaires .img{
     height: 100%;
