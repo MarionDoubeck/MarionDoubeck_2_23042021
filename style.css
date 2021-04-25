@@ -21,23 +21,33 @@ header, main, footer{
 
 header{
     background-color: white;
-    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
-#header img{
-    position: absolute;
-    top: 30px;
-    left: 60px;
+#logo{
+    order:1;
+    justify-self:flex-start;
 }
+.menu{
+    order:2;
+    width: 10%;
+    color: black;
+    text-decoration: none;
+    align-self: center;
+}
+.menu:hover{
+    color: #0065FC;
+    border-top:  #0065FC solid 3px;
+}
+
 #inscription{
-    position: absolute;
-    top: 30px;
-    right: 60px;
-}
-
-#menu{
-    float: right;
-    margin-right: 10em;
+    width: 8%;
+    color:#0065FC;
+    text-decoration: none;
+    order: 3;
+    align-self: center;
 }
 
 strong,h1, h2, h3, h4{
@@ -59,13 +69,12 @@ h4{
 
 #recherche {
     border-color: #f2f2f2;
-    border-radius : 20px ;
+    border-radius : 15px ;
     display: flex;
-    width: fit-content;
     height: fit-content;
     overflow: hidden;
     height: 3em;
-    width: 20em;
+    width: 26em;
     background-color: #f2f2f2;
     margin-bottom: 1.3em;
     margin-top: 1.5em;
@@ -74,43 +83,60 @@ h4{
     align-self: center;
     text-align: center;
     background-color: #f2f2f2;
-    width: 10em;
+    width: 13%;
 }
 #champ-de-recherche{
-    width: 50em;
-    border-color: #f2f2f2;
-    border: 1px 1px 1px 1px; /*marche pas probleme ombre*/
-    box-shadow: none; /*marche pas probleme ombre*/
     font-family: 'Raleway-Bold';
+    font-size: 1.1em;
+    padding-left: 1em;
+    color: black;
+    width: 70%;
+    border: #f2f2f2 solid 1px;
+}
+::placeholder{
+    color: black;
 }
 #recherche-lieu{
     border-color: #f2f2f2;
     color: white;
-    background-color: blue;
-    border: 1px 1px 1px 1px; /*marche pas probleme ombre*/
-    box-shadow: none; /*marche pas probleme ombre*/
+    background-color: #0065FC;
+    border: #0065FC solid 1px;
     font-family: 'Raleway-Bold';
+    font-size: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
+/*___________filtres______________*/
+
+#mes_filtres{
+    margin-left: 1em;
+}
 
 #filtres {
     display: inline-block;
-    border: solid #f2f2f2 2px;
-    border-radius : 20px;
-    margin: 5px;
-    padding: 0px;
-    margin-bottom: 1.3em;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    border: rgb(226, 225, 225) solid  2px;
+    border-radius: 50px;
+    border-left: #DEEBFF solid 3px;
+    max-height: 3em;
+    z-index: 0; /*marche pas*/
 }
-
-#filtres .fas{
+.mot{
+    padding-left: 1em;
+    padding-right: 1.5em;
+}
+#filtres>.fas{
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 50%;
-    padding: 15px;
+    padding: 1em;
+    z-index: 1;  
 }
 
 #filtres:hover {
-
     background-color: #DEEBFF;
 }
 
@@ -184,18 +210,17 @@ h4{
     background-color: white;
     border:white solid 3px; /*POURQUOI SANS CA MARCHE PAS?*/
 }
+
 .description_heb>p{
     font-size: 0.9em;
     line-height: 0.1em;
 }
 .alive_stars{
     color: #0065FC;
-    align-self: flex-end;
     font-size: 0.7em;
 }
 .dead_stars{
-    color: #F2F2F2;
-    align-self: flex-end;
+    color: grey;
     font-size: 0.7em;
 }
 /*________populaires____________*/
@@ -217,7 +242,6 @@ h4{
     height: 21%;
     border-radius: 20px;
     border:white 5px solid;
-    justify-content: space-around;
     display: flex;  
     overflow: hidden;
 }
@@ -232,6 +256,8 @@ h4{
     object-fit: cover;
 }
 .description_pop{
+    display: flex;
+    flex-direction: column;
     padding-left: 1em;
     padding-right: 1em;
     width: 60%;
@@ -239,14 +265,22 @@ h4{
     line-height: 1.3em;
     color: black;
     text-decoration: none;
-    background-color: white;
+    background-color: white;    
+}
+.description_pop>h4{
+    line-height: 1.3em;
+    margin: 0;
+    padding-top: 1em;
 }
 .description_pop>p{
     font-size: 0.9em;
-    line-height: 0.1em;
+    margin: 0;
+    padding-top: 0.1em;
 }
 
-
+.stars{
+    align-self: flex-end;   /*marche pas*/
+}
 
 /*____Activités__________*/
 

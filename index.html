@@ -10,16 +10,17 @@
 <body>
 
     <!-- Header -->
-    <header class="ligne">
-        <img src="images/logo/Reservia.svg" alt="logo"/>
-        <a id="inscription" href="#">S'inscrire</a>
-        <span id="menu">
-            <a href="#hebergements">hebergements</a>
-            <a href="#activites">activités</a>
-        </span>
+    
+    <header>
+            <span id="logo"><img  src="images/logo/Reservia.svg" alt="logo"/></span>
+            <a id="inscription" href="#"><strong>S'inscrire</strong></a>
+            <a class="menu" href="#hebergements">Hébergements</a>
+            <a class="menu" href="#activites">Activités</a>
     </header>
 
+    <!-- Main -->
     <main>
+
     <!-- Section 1 Recherche -->
     <section id="section1">
         <h1 id="titre">Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -27,7 +28,7 @@
 
         <!-- barre de recherche -->
         <div id="recherche">
-            <i class="fas fa-map-marker-alt"> </i>
+            <span class="fas fa-map-marker-alt"> </span>
             <input type="search" id="champ-de-recherche" placeholder="Marseille, France">
             <input type="submit" id="recherche-lieu" value="Rechercher">
         </div>
@@ -35,22 +36,24 @@
         <!-- filtres -->
         <div>
             <strong>Filtres</strong>
-            <div id="filtres">
-                <span class="fas fa-money-bill-wave"></span>
-                <strong>Economique</strong>
-            </div>
-            <div id="filtres">
-                <span class="fas fa-child"></span>
-                <strong>Familial</strong>
-            </div>
-            <div id="filtres">
-                <span class="fas fa-heart"></span>
-                <strong>Romantique</strong>
-            </div>
-            <div id="filtres">
-                <span class="fas fa-dog"></span>
-                <strong>Animaux autorisés</strong>
-            </div>
+            <span id="mes_filtres">
+                <div id="filtres">
+                    <span class="fas fa-money-bill-wave"></span>
+                    <strong class="mot" >Economique</strong>
+                </div>
+                <div id="filtres">
+                    <span class="fas fa-child"></span>
+                    <strong class="mot">Familial</strong>
+                </div>
+                <div id="filtres">
+                    <span class="fas fa-heart"></span>
+                    <strong class="mot">Romantique</strong>
+                </div>
+                <div id="filtres">
+                    <span class="fas fa-dog"></span>
+                    <strong class="mot">Animaux autorisés</strong>
+                </div>
+            </span>
         </div>
 
         <!-- message (500 pub ou reel algo?) -->
@@ -186,6 +189,7 @@
                 <div class="description_pop">
                     <h4> Hôtel Le soleil du matin</h4>
                     <p>Nuit à partir de 128€</p>
+                    <div class="stars">
                     <span class="alive_stars">
                         <span class="fas fa-star" ></span>
                         <span class="fas fa-star" ></span>
@@ -194,14 +198,16 @@
                         <span class="fas fa-star" ></span>
                     </span>
                 </div>
+                </div>
             </a>
             <a class="hotel_pop" href="#">
                 <div class="photo_pop">
                         <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="hotel au coeur de l'eau"/>
                 </div>
                 <div class="description_pop">
-                        <h4> Au coeur de l'eau Chambres d'hôtes</h4>
-                        <p>Nuit à partir de 71€</p>
+                    <h4> Au coeur de l'eau Chambres d'hôtes</h4>
+                    <p>Nuit à partir de 71€</p>
+                    <div class="stars">
                         <span class="alive_stars">
                             <span class="fas fa-star" ></span>
                             <span class="fas fa-star" ></span>
@@ -211,6 +217,7 @@
                         <span class="dead_stars">
                             <span class="fas fa-star" ></span>
                         </span>
+                    </div>
                 </div>
             </a>
             <a class="hotel_pop" href="#"> 
@@ -220,6 +227,7 @@
                 <div class="description_pop">
                     <h4>Hôtel Tout bleu et Blanc</h4>
                     <p> Nuit à partir de 68€</p>
+                    <div class="stars">
                     <span class="alive_stars">
                         <span class="fas fa-star" ></span>
                         <span class="fas fa-star" ></span>
@@ -229,6 +237,7 @@
                     <span class="dead_stars">
                         <span class="fas fa-star" ></span>
                     </span>
+                </div>
                 </div>
             </a> 
         </section>
