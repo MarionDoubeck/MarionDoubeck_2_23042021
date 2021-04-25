@@ -279,7 +279,7 @@ h4{
 
 /*____Activités__________*/
 
-.activites{
+#activites{
     order: 2;
     margin-top: 5em;
     height: fit-content;
