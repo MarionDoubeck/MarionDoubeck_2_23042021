@@ -12,8 +12,8 @@
     font-family: 'Raleway-Regular', sans-serif;
 }
 header, main, footer{
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 .ligne{
     width: 100%;
@@ -54,7 +54,7 @@ strong,h1, h2, h3, h4{
     font-family: 'Raleway-Bold';
 }
 h1{
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 h3{
     font-size: 1.1em ;
