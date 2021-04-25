@@ -334,10 +334,14 @@ h4{
 /*_________Footer__________*/
 footer{
     margin-top: 5em;
+    padding-top: 2em;
     display: flex;
     background-color: #f2f2f2;
+    justify-content: space-evenly;
 }
-
+footer>div{
+    width: 33%;
+}
 footer li{
     list-style: none;
     line-height: 2em;
