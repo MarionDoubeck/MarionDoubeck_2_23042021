@@ -29,6 +29,7 @@ header{
 #logo{
     order:1;
     justify-self:flex-start; /*marche pas*/
+    align-self: flex-start; /*marche pas*/
 }
 .menu{
     order:2;
@@ -39,7 +40,7 @@ header{
 }
 .menu:hover{
     color: #0065FC;
-    border-top:  #0065FC solid 3px;
+    border-top:  #0065FC solid 3px; /*marche pas*/
 }
 
 #inscription{
@@ -280,8 +281,9 @@ h4{
 }
 
 .stars{
-    align-self: flex-end;   /*marche pas*/
-    justify-self: left; /*marche pas*/
+    flex-direction: row;
+    align-self: flex-start; 
+    justify-self: flex-end; /*marche pas*/
 }
 
 /*____Activités__________*/
