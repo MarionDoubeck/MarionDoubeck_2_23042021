@@ -22,14 +22,13 @@ header, main, footer{
 header{
     background-color: white;
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
 }
 
 #logo{
     order:1;
+    padding-top: 2em;
     justify-self:flex-start; /*marche pas*/
-    align-self: flex-start; /*marche pas*/
 }
 .menu{
     order:2;
@@ -37,13 +36,15 @@ header{
     color: black;
     text-decoration: none;
     align-self: center;
+    padding-top: 2em;
 }
 .menu:hover{
     color: #0065FC;
-    border-top:  #0065FC solid 3px; /*marche pas*/
+    border-top:  #0065FC solid 3px;
 }
 
 #inscription{
+    padding-top: 2em;
     width: 8%;
     color:#0065FC;
     text-decoration: none;
@@ -280,8 +281,7 @@ h4{
     padding-top: 0.1em;
 }
 
-.stars{
-    flex-direction: row;
+.description_pop>.stars{
     align-self: flex-start; 
     justify-self: flex-end; /*marche pas*/
 }

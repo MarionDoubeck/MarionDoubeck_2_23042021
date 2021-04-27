@@ -267,6 +267,8 @@ h4{
     color: black;
     text-decoration: none;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 .description_pop>p{
     font-size: 0.9em;
