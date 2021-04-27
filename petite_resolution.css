@@ -41,7 +41,7 @@ header{
     width: 100%;
     color: black;
     text-decoration: none;
-    display: inline-block;
+    display: inline-block; 
 }
 .menu:hover{
     color: #0065FC;
@@ -326,7 +326,7 @@ footer{
     margin-top: 5em;
     display: flex;
     background-color: #f2f2f2;
-
+    flex-wrap: wrap;
 }
 
 footer>div{
