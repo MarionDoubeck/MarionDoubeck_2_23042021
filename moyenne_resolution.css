@@ -1,0 +1,342 @@
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('police/static/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url('police/static/Raleway-Bold.ttf');
+}
+
+*{
+    text-decoration: none;
+    font-family: 'Raleway-Regular', sans-serif;
+    background-color: red;
+}
+header, main, footer{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.ligne{
+    width: 100%;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;   
+    flex-wrap: wrap;
+}
+
+#logo{
+    height: 3.5em;
+    display: flex;
+    flex-grow: 20;
+}
+#inscription{
+    width: 8%;
+    color:#0065FC;
+    text-decoration: none;
+    font-size: 1em;
+}
+.menu{
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    display: inline-block; 
+}
+.menu:hover{
+    color: #0065FC;
+    border-bottom:  #0065FC solid 3px;
+}
+
+
+
+strong,h1, h2, h3, h4{
+    font-family: 'Raleway-Bold';
+}
+strong{
+    font-size: 1.3em;
+}
+h1{
+    font-size: 1.3em;
+}
+h3{
+    font-size: 1.1em ;
+}
+h4{
+    font-size: 0.95em;
+}
+
+#titre{
+    line-height: 1.3em;
+}
+#section1>p{
+    font-size: 1em;
+}
+
+#recherche {
+    border-color: #f2f2f2;
+    border-radius : 15px ;
+    display: flex;
+    height: fit-content;
+    overflow: hidden;
+    height: 3em;
+    width: 26em;
+    background-color: #f2f2f2;
+    margin-bottom: 1.3em;
+    margin-top: 1.5em;
+}
+#recherche .fas{
+    align-self: center;
+    text-align: center;
+    background-color: #f2f2f2;
+    width: 13%;
+}
+#champ-de-recherche{
+    font-family: 'Raleway-Bold';
+    font-size: 1.1em;
+    padding-left: 1em;
+    color: black;
+    width: 70%;
+    border: #f2f2f2 solid 1px;
+}
+::placeholder{
+    color: black;
+}
+#recherche-lieu{
+    border-color: #f2f2f2;
+    color: white;
+    background-color: #0065FC;
+    border: #0065FC solid 1px;
+    font-family: 'Raleway-Bold';
+    font-size: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/*___________filtres______________*/
+
+#mes_filtres{
+    margin-left: 1em;
+}
+
+#filtres {
+    display:flex;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    border: rgb(226, 225, 225) solid  2px;
+    border-radius: 50px;
+    border-left: #DEEBFF solid 3px;
+    max-height: 3em;
+    z-index: 0; /*marche pas*/
+    width: fit-content;
+}
+.mot{
+    padding-left: 1em;
+    padding-right: 1.5em;
+}
+#filtres>.fas{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    padding: 1em;
+    z-index: 1;  
+}
+
+#filtres:hover {
+    background-color: #DEEBFF;
+}
+
+#info{
+    color: white;
+    background-color:#0065FC;
+    border-radius: 50%;     
+    border-color: #F2F2F2;  
+    border-width: 1px;      
+    border-style: solid;    
+    margin-bottom: 1.3em;
+}
+
+/*______________________________________*/
+
+#container_hebergements_et_populaires{
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    line-height: 0.2em;
+}
+ 
+.hebergements_mrs{
+    order: 2;
+    height: 110em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.les_plus_populaires{
+    order: 1;
+    height: 32em;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#f2f2f2;
+    justify-content: space-around;
+}
+/*________hebergements à Marseille____________*/
+#titre_heb{
+    padding-top: 1em;
+    width: 100%;
+}
+.hotel_heb{
+    height: 11em;
+    border-radius: 20px;
+    border: #f2f2f2 5px solid;
+    overflow: hidden;  
+}
+.photo_heb{
+    height: 60%;
+    width: 100%;
+}
+.photo_heb>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.description_heb{
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    height: 40%;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border:white solid 3px; /*POURQUOI SANS CA MARCHE PAS?*/
+}
+.description_heb>p{
+    font-size: 0.9em;
+    line-height: 0.1em;
+}
+.alive_stars{
+    color: #0065FC;
+    align-self: flex-end;
+    font-size: 0.7em;
+}
+.dead_stars{
+    color: #F2F2F2;
+    align-self: flex-end;
+    font-size: 0.7em;
+}
+/*________populaires____________*/
+
+#titre_pop{
+    padding-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#titre_pop>.fas{
+    font-size: 1.3em;
+    padding-top: 0.4em;
+}
+
+.hotel_pop{
+    height: 10em;
+    border-radius: 20px;
+    border:white 5px solid;
+    justify-content: space-around;
+    display: flex;  
+    overflow: hidden;
+}
+
+.photo_pop{
+    width: 40%;
+    height: 100%;
+}
+.photo_pop>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.description_pop{
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 60%;
+    height: 100%;
+    line-height: 1.3em;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.description_pop>p{
+    font-size: 0.9em;
+    line-height: 0.1em;
+}
+
+
+
+/*____Activités__________*/
+
+#activites{
+    order: 3;
+    margin-top: 5em;
+    height: fit-content;
+    border-radius: 20px;
+    justify-content: space-between;
+    display: flex;
+    color: black ;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+#titre_activites{
+    padding-left: 1em;
+    width: 100%;
+}
+.a_voir_100,.a_voir_66,.a_voir_33,.a_voir_50{
+    width: 100%;
+    height: 16em;
+    border: #F2F2F2 solid 2px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.photo_activite{
+    width: 100%;
+    height: 70%;
+}
+.photo_activite>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description_activite{
+    padding-top: 0.8em;
+    margin-left: 1em;
+    height: 3.5em;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+/*_________Footer__________*/
+footer{
+    margin-top: 5em;
+    display: flex;
+    background-color: #f2f2f2;
+    flex-wrap: wrap;
+}
+
+footer>div{
+    width: 33%;
+}
+
+footer li{
+    list-style: none;
+    line-height: 2em;
+}
