@@ -11,47 +11,13 @@
     text-decoration: none;
     font-family: 'Raleway-Regular', sans-serif;
 }
-header, main, footer{
-    padding-left: 2em;
-    padding-right: 2em;
+main{
+    padding-left: 3em;
+    padding-right: 4em;
 }
 .ligne{
     width: 100%;
 }
-
-header{
-    background-color: white;
-    display: flex;
-    justify-content: flex-end;
-}
-
-#logo{
-    order:1;
-    padding-top: 2em;
-    justify-self:flex-start; /*marche pas*/
-}
-.menu{
-    order:2;
-    width: 10%;
-    color: black;
-    text-decoration: none;
-    align-self: center;
-    padding-top: 2em;
-}
-.menu:hover{
-    color: #0065FC;
-    border-top:  #0065FC solid 3px;
-}
-
-#inscription{
-    padding-top: 2em;
-    width: 8%;
-    color:#0065FC;
-    text-decoration: none;
-    order: 3;
-    align-self: center;
-}
-
 strong,h1, h2, h3, h4{
     font-family: 'Raleway-Bold';
 }
@@ -63,6 +29,51 @@ h3{
 }
 h4{
     font-size: 0.95em;
+}
+/*___________________________*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header>.logo{
+    padding-top: 1em;
+}
+header>.menu_ordi{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding-top: 2em;
+}
+
+#menu_heb{
+    padding-top: 2em;
+    color: black;
+    text-decoration: none;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+#menu_act{
+    padding-top: 2em;
+    color: black;
+    text-decoration: none;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+#menu_heb:hover{
+    color: #0065FC;
+    border-top:  #0065FC solid 3px;
+}
+#menu_act:hover{
+    color: #0065FC;
+    border-top:  #0065FC solid 3px;
+}
+
+.menu_ordi>.inscription{
+    margin-left: 2em;
+    color:#0065FC;
+    text-decoration: none;
 }
 
 #titre{
