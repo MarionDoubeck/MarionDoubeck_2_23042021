@@ -33,7 +33,7 @@ h4{
 p{
     font-size: 0.85em;
 }
-/*___________________________*/
+/*___________________________________________________________________*/
 
 header{
     display: flex;
@@ -47,7 +47,7 @@ header>.menu_ordi{
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    padding-top: 2em;
+    padding-top: 1.2em;
 }
 
 #menu_heb{
@@ -77,10 +77,12 @@ header>.menu_ordi{
     margin-left: 2em;
 }
 #inscription{
-    color:#0065FC; /*marche pas*/
-    text-decoration: none; /*marche pas*/
+    color:#0065FC;
+    text-decoration: none; 
 }
-
+#section1{
+    margin-top: 2.6em;
+}
 #titre{
     line-height: 0.3em;
 }
@@ -166,10 +168,10 @@ header>.menu_ordi{
     border-color: #F2F2F2;  
     border-width: 1px;      
     border-style: solid;    
-    margin-bottom: 1.3em;
+    margin-bottom: 2em;
 }
 
-/*______________________________________*/
+/*______________________________________________________________________________*/
 
 #container_hebergements_et_populaires{
     display: flex;
@@ -198,7 +200,7 @@ header>.menu_ordi{
     display: flex;
     flex-wrap: wrap;
 }
-/*________hebergements à Marseille____________*/
+/*____________________________hebergements à Marseille______________________*/
 #titre_heb{
     padding-top: 1em;
     width: 100%;
@@ -246,7 +248,7 @@ header>.menu_ordi{
     color: grey;
     font-size: 0.7em;
 }
-/*________populaires____________*/
+/*____________________________populaires________________________________*/
 
 #titre_pop{
     padding-top: 1em;
@@ -312,10 +314,10 @@ header>.menu_ordi{
     font-size: 0.95em;
 }
 
-/*____Activités__________*/
+/*________________________Activités____________________*/
 
 #activites{
-    margin-top: 5em;
+    margin-top: 4em;
     height: 33em;
     border-radius: 20px;
     justify-content: space-between;
@@ -327,7 +329,7 @@ header>.menu_ordi{
     width: 100%;
 }
 #toutes-activites{
-    height: 28em;
+    height: 27.8em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -348,10 +350,10 @@ header>.menu_ordi{
     height: 100%;
 }
 .a_voir_66{   
-    height: 60%;
+    height: 52%;
 }
 .a_voir_33{ 
-    height: 30%;
+    height: 37%;
 }
 .a_voir_50{  
     height: 45%;
@@ -359,7 +361,24 @@ header>.menu_ordi{
 .photo_activite{
     overflow: hidden;
 }
-.photo_activite>img{
+.a_voir_100>.photo_activite>img{
+    height: 115%;
+    width: 210%;
+    object-position: -9.5em 0;
+}
+.a_voir_66>.photo_activite>img{
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+}
+.a_voir_33>.photo_activite>img{
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+}
+.a_voir_50>.photo_activite>img{
+    width: 100%;
+    height: 140%;
     object-fit: cover;
 }
 .description_activite{
@@ -373,9 +392,10 @@ header>.menu_ordi{
     margin-top: 1.2em;
 }
 
-/*_________Footer__________*/
+/*_________________________Footer____________________*/
+
 footer{
-    margin-top: 5em;
+    margin-top: 1em;
     display: flex;
     background-color: #f2f2f2;
 
