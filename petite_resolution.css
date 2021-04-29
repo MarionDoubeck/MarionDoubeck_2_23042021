@@ -11,53 +11,74 @@
     text-decoration: none;
     font-family: 'Raleway-Regular', sans-serif;
 }
-header, main, footer{
-    padding-left: 1em;
-    padding-right: 1em;
-}
+
 .ligne{
     width: 100%;
 }
 
 header{
+    margin:2em;
     background-color: white;
     display: flex;
-    flex-direction: row;   
-    flex-wrap: wrap;
+    flex-direction: column;   
+    line-height: 3em;
+    justify-content: space-between;
 }
 
-#logo{
-    height: 3.5em;
-    display: flex;
-    flex-grow: 20;
+.logo{
+    width: 100%;
 }
 #inscription{
-    width: 8%;
+    width: 85%;
+    font-size: 1em;
+    position: absolute;
+    top:2em;
+    text-align: right;
     color:#0065FC;
     text-decoration: none;
-    font-size: 1em;
 }
 .menu{
-    width: 100%;
     color: black;
     text-decoration: none;
-    display: inline-block; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: 3.5em;
 }
-.menu:hover{
+#menu_heb{
+    width: 50%;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-bottom: grey solid 3px;
+    text-align: center;
+}
+#menu_act{
+    width: 50%;
+    color:black;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-bottom: grey solid 3px;
+    text-align: center;
+}
+#menu_heb:hover{
     color: #0065FC;
     border-bottom:  #0065FC solid 3px;
 }
-
-
+#menu_act:hover{
+    color: #0065FC;
+    border-bottom:  #0065FC solid 3px;
+}
 
 strong,h1, h2, h3, h4{
     font-family: 'Raleway-Bold';
 }
 strong{
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 h1{
-    font-size: 1.3em;
+    font-size: 1.7em;
 }
 h3{
     font-size: 1.1em ;
@@ -65,12 +86,16 @@ h3{
 h4{
     font-size: 0.95em;
 }
-
+#section1{
+    padding:1em;
+}
 #titre{
+    margin-top: 4em;
+    font-size: 1.8em;
     line-height: 1.3em;
 }
 #section1>p{
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 #recherche {
@@ -80,12 +105,12 @@ h4{
     height: fit-content;
     overflow: hidden;
     height: 3em;
-    width: 26em;
+    width: 28em;
     background-color: #f2f2f2;
     margin-bottom: 1.3em;
     margin-top: 1.5em;
 }
-#recherche .fas{
+#icone-position{
     align-self: center;
     text-align: center;
     background-color: #f2f2f2;
@@ -96,21 +121,23 @@ h4{
     font-size: 1.1em;
     padding-left: 1em;
     color: black;
-    width: 70%;
+    width: 90%;
     border: #f2f2f2 solid 1px;
 }
 ::placeholder{
     color: black;
 }
 #recherche-lieu{
-    border-color: #f2f2f2;
-    color: white;
+    display: none;
+}
+#icone-search{
+    width: 3em;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 0.5em;
     background-color: #0065FC;
-    border: #0065FC solid 1px;
-    font-family: 'Raleway-Bold';
-    font-size: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    color: white;
+    border-radius: 30%;
 }
 
 /*___________filtres______________*/
@@ -127,20 +154,24 @@ h4{
     border: rgb(226, 225, 225) solid  2px;
     border-radius: 50px;
     border-left: #DEEBFF solid 3px;
-    max-height: 3em;
-    z-index: 0; /*marche pas*/
+    max-height: 2.7em;
     width: fit-content;
 }
 .mot{
     padding-left: 1em;
     padding-right: 1.5em;
+    padding-top: 0.5em;
 }
 #filtres>.fas{
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 50%;
     padding: 1em;
-    z-index: 1;  
+    height: 1em;
+    width: 1em;
+    position: relative;
+    bottom: 0.15em;
+    right: 0.1em;
 }
 
 #filtres:hover {
@@ -160,38 +191,37 @@ h4{
 /*______________________________________*/
 
 #container_hebergements_et_populaires{
-    height: fit-content;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
     align-content: space-between;
-    line-height: 0.2em;
 }
  
 .hebergements_mrs{
-    order: 2;
-    height: 110em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 .les_plus_populaires{
-    order: 1;
-    height: 32em;
     display: flex;
     flex-wrap: wrap;
     background-color:#f2f2f2;
     justify-content: space-around;
+    padding-bottom: 2em;
 }
 /*________hebergements à Marseille____________*/
 #titre_heb{
-    padding-top: 1em;
+    padding: 1em;
+    padding-bottom: 0;
     width: 100%;
 }
 .hotel_heb{
-    height: 11em;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 16em;
     border-radius: 20px;
-    border: #f2f2f2 5px solid;
+    box-shadow: 3px 3px 3px #f2f2f2;
     overflow: hidden;  
+    margin-bottom: 1em;
 }
 .photo_heb{
     height: 60%;
@@ -210,16 +240,20 @@ h4{
     color: black;
     text-decoration: none;
     background-color: white;
-    border:white solid 3px; /*POURQUOI SANS CA MARCHE PAS?*/
+    border:white solid 3px; 
+}
+.description_heb>h4{
+    font-size: 1.4em;
+    line-height: 0.1em;
 }
 .description_heb>p{
-    font-size: 0.9em;
+    font-size: 1.2em;
     line-height: 0.1em;
 }
 .alive_stars{
     color: #0065FC;
     align-self: flex-end;
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
 .dead_stars{
     color: #F2F2F2;
@@ -229,19 +263,22 @@ h4{
 /*________populaires____________*/
 
 #titre_pop{
-    padding-top: 1em;
+    padding: 1em;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 #titre_pop>.fas{
-    font-size: 1.3em;
-    padding-top: 0.4em;
+    font-size: 2em;
+    padding-top: 0.8em;
 }
 
 .hotel_pop{
-    height: 10em;
+    margin-left:1em;
+    margin-right:1em;
+    margin-bottom: 0.8em;
+    height: 11.3em;
     border-radius: 20px;
     border:white 5px solid;
     justify-content: space-around;
@@ -327,12 +364,9 @@ h4{
 footer{
     margin-top: 5em;
     display: flex;
+    flex-direction: column;
     background-color: #f2f2f2;
     flex-wrap: wrap;
-}
-
-footer>div{
-    width: 33%;
 }
 
 footer li{

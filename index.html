@@ -5,8 +5,8 @@
         <script src="https://kit.fontawesome.com/7fd07d27c0.js" crossorigin="anonymous"></script>
         <title>Prototype Reservia</title>
         <link rel="stylesheet" media="screen and (min-width: 1151px)"href="style.css">
-        <link rel="stylesheet" media="screen and (min-width: 701px) and (max-width: 1150px)" href="moyenne_resolution.css" />
-        <link rel="stylesheet" media="screen and (max-width: 700px)" href="petite_resolution.css" />
+        <link rel="stylesheet" media="screen and (min-width: 641px) and (max-width: 1150px)" href="moyenne_resolution.css" />
+        <link rel="stylesheet" media="screen and (max-width: 640px)" href="petite_resolution.css" />
     </head>
 <body>
 <main>
@@ -34,9 +34,10 @@
 
         <!-- barre de recherche -->
         <div id="recherche">
-            <span class="fas fa-map-marker-alt"> </span>
+            <span id="icone-position" class="fas fa-map-marker-alt"> </span>
             <input type="search" id="champ-de-recherche" placeholder="Marseille, France">
             <input type="submit" id="recherche-lieu" value="Rechercher">
+            <span id="icone-search" class="fas fa-search"></span>
         </div>
 
         <!-- filtres -->
@@ -258,7 +259,7 @@
             </a> 
         </section>
     </section>
-    
+
 
     <!-- Section 3 : Activités -->
 
