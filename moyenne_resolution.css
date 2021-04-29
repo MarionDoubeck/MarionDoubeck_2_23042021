@@ -10,52 +10,16 @@
 *{
     text-decoration: none;
     font-family: 'Raleway-Regular', sans-serif;
-    background-color: red;
 }
-header, main, footer{
-    padding-left: 1em;
-    padding-right: 1em;
+main{
+    margin-left: 2em;
+    margin-right: 3em;
 }
 .ligne{
     width: 100%;
 }
-
-header{
-    background-color: white;
-    display: flex;
-    flex-direction: row;   
-    flex-wrap: wrap;
-}
-
-#logo{
-    height: 3.5em;
-    display: flex;
-    flex-grow: 20;
-}
-#inscription{
-    width: 8%;
-    color:#0065FC;
-    text-decoration: none;
-    font-size: 1em;
-}
-.menu{
-    width: 100%;
-    color: black;
-    text-decoration: none;
-    display: inline-block; 
-}
-.menu:hover{
-    color: #0065FC;
-    border-bottom:  #0065FC solid 3px;
-}
-
-
-
 strong,h1, h2, h3, h4{
     font-family: 'Raleway-Bold';
-}
-strong{
-    font-size: 1.3em;
 }
 h1{
     font-size: 1.3em;
@@ -64,14 +28,63 @@ h3{
     font-size: 1.1em ;
 }
 h4{
-    font-size: 0.95em;
+    font-size: 1em;
+}
+p{
+    font-size: 0.85em;
+}
+/*___________________________________________________________________*/
+
+header{
+    display: flex;
+    justify-content: space-between;
 }
 
-#titre{
-    line-height: 1.3em;
+header>.logo{
+    padding-top: 1em;
 }
-#section1>p{
-    font-size: 1em;
+header>.menu_ordi{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding-top: 1.2em;
+}
+
+#menu_heb{
+    padding-top: 2em;
+    color: black;
+    text-decoration: none;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+#menu_act{
+    padding-top: 2em;
+    color: black;
+    text-decoration: none;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+#menu_heb:hover{
+    color: #0065FC;
+    border-top:  #0065FC solid 3px;
+}
+#menu_act:hover{
+    color: #0065FC;
+    border-top:  #0065FC solid 3px;
+}
+
+.inscription{
+    margin-left: 2em;
+}
+#inscription{
+    color:#0065FC;
+    text-decoration: none; 
+}
+#section1{
+    margin-top: 2.6em;
+}
+#titre{
+    line-height: 0.3em;
 }
 
 #recherche {
@@ -121,16 +134,14 @@ h4{
 }
 
 #filtres {
-    display:flex;
+    display: inline-block;
     margin-left: 1em;
     margin-top: 1em;
     margin-bottom: 1.5em;
     border: rgb(226, 225, 225) solid  2px;
     border-radius: 50px;
     border-left: #DEEBFF solid 3px;
-    max-height: 3em;
-    z-index: 0; /*marche pas*/
-    width: fit-content;
+    max-height: 2.75em;
 }
 .mot{
     padding-left: 1em;
@@ -141,7 +152,9 @@ h4{
     background-color: #DEEBFF;
     border-radius: 50%;
     padding: 1em;
-    z-index: 1;  
+    position: relative;
+    bottom: 0.15em;
+    right: 0.15em;
 }
 
 #filtres:hover {
@@ -155,84 +168,100 @@ h4{
     border-color: #F2F2F2;  
     border-width: 1px;      
     border-style: solid;    
-    margin-bottom: 1.3em;
+    margin-bottom: 2em;
 }
 
-/*______________________________________*/
+/*______________________________________________________________________________*/
 
 #container_hebergements_et_populaires{
-    height: fit-content;
     display: flex;
+    flex-direction: column-reverse ;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-content: space-between;
     line-height: 0.2em;
+    padding-right: 2em;
 }
  
 .hebergements_mrs{
-    order: 2;
-    height: 110em;
-    display: flex;
-    flex-wrap: wrap;
+    background-color:#f2f2f2;
+    border-radius: 20px;
     justify-content: space-around;
+    margin-top: 2em;
 }
 .les_plus_populaires{
-    order: 1;
-    height: 32em;
+    background-color:#f2f2f2;
+    border-radius: 20px;
+}
+
+.hebergements_mrs{  
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color:#f2f2f2;
-    justify-content: space-around;
+    padding-left: 2em;
+    padding-right: 2em;
 }
-/*________hebergements à Marseille____________*/
+.les_plus_populaires{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+/*____________________________hebergements à Marseille______________________*/
 #titre_heb{
     padding-top: 1em;
     width: 100%;
 }
 .hotel_heb{
-    height: 11em;
+    width:40%;
+    height: 15em;
     border-radius: 20px;
-    border: #f2f2f2 5px solid;
-    overflow: hidden;  
+    border: white 5px solid;
+    overflow: hidden;   
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
 }
 .photo_heb{
-    height: 60%;
     width: 100%;
+    height: 10em;
 }
 .photo_heb>img{
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 .description_heb{
-    padding-left: 1em;
-    padding-right: 1em;
     width: 100%;
     height: 40%;
+    line-height: 1em;
     color: black;
     text-decoration: none;
     background-color: white;
-    border:white solid 3px; /*POURQUOI SANS CA MARCHE PAS?*/
+   padding-left: 1em;
+}
+.description_heb>h4{
+    margin-top: 0.8em;
+    margin-bottom: 0;
 }
 .description_heb>p{
-    font-size: 0.9em;
-    line-height: 0.1em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
 }
 .alive_stars{
     color: #0065FC;
-    align-self: flex-end;
     font-size: 0.7em;
 }
 .dead_stars{
-    color: #F2F2F2;
-    align-self: flex-end;
+    color: grey;
     font-size: 0.7em;
 }
-/*________populaires____________*/
+/*____________________________populaires________________________________*/
 
 #titre_pop{
     padding-top: 1em;
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -242,17 +271,17 @@ h4{
 }
 
 .hotel_pop{
-    height: 10em;
+    width:100%;
     border-radius: 20px;
     border:white 5px solid;
-    justify-content: space-around;
     display: flex;  
     overflow: hidden;
+    margin: 1em;
 }
 
 .photo_pop{
-    width: 40%;
-    height: 100%;
+    width: 70%;
+    height: 10em;
 }
 .photo_pop>img{
     width: 100%;
@@ -260,76 +289,122 @@ h4{
     object-fit: cover;
 }
 .description_pop{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
     padding-left: 1em;
     padding-right: 1em;
     width: 60%;
     height: 100%;
     line-height: 1.3em;
     color: black;
-    text-decoration: none;
+    text-decoration: none;  
+    padding-top: 2em;
     background-color: white;
+}
+.description_pop_txt{
+    height: 50%;
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
 }
-.description_pop>p{
-    font-size: 0.9em;
-    line-height: 0.1em;
+.description_pop_txt>h4{
+    margin : 0;
+}  
+.description_pop_txt>p{
+    margin-top: 0;
+}    
+
+.description_pop>.stars{
+    align-self: flex-start; 
+    font-size: 0.95em;
 }
 
-
-
-/*____Activités__________*/
+/*________________________Activités____________________*/
 
 #activites{
-    order: 3;
-    margin-top: 5em;
-    height: fit-content;
+    margin-top: 4em;
     border-radius: 20px;
     justify-content: space-between;
-    display: flex;
     color: black ;
     text-decoration: none;
-    flex-wrap: wrap;
 }
 #titre_activites{
     padding-left: 1em;
     width: 100%;
 }
-.a_voir_100,.a_voir_66,.a_voir_33,.a_voir_50{
-    width: 100%;
-    height: 16em;
+#toutes-activites{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: 10em;
+    padding-left: 4em;
+}
+#toutes-activites>a{
+    width: 40%;
+    height: 15em;
     border: #F2F2F2 solid 2px;
     border-radius: 20px;
+    box-shadow: 2px 2px 2px #f2f2f2;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    margin: 1em;
 }
-
-
+.a_voir_100{
+    height: 100%;
+}
+.a_voir_66{   
+    height: 100%;
+}
+.a_voir_33{ 
+    height: 100%;
+}
+.a_voir_50{  
+    height: 100%;
+}
 .photo_activite{
-    width: 100%;
-    height: 70%;
+    overflow: hidden;
 }
-.photo_activite>img{
+.a_voir_100>.photo_activite>img{
+    height: 100%;
+    width: 100%;
+}
+.a_voir_66>.photo_activite>img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
+.a_voir_33>.photo_activite>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.a_voir_50>.photo_activite>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .description_activite{
-    padding-top: 0.8em;
     margin-left: 1em;
     height: 3.5em;
     background-color: white;
     color: black;
     text-decoration: none;
 }
-/*_________Footer__________*/
+.description_activite>h4{
+    margin-top: 1.2em;
+}
+
+/*_________________________Footer____________________*/
+
 footer{
-    margin-top: 5em;
+    margin-top: 1em;
     display: flex;
     background-color: #f2f2f2;
-    flex-wrap: wrap;
+
 }
 
 footer>div{
