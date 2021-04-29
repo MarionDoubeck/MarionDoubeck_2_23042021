@@ -18,16 +18,16 @@ main{
 .ligne{
     width: 100%;
 }
-strong,h1, h2, h3, h4{
+strong,h1, h2, h3{
     font-family: 'Raleway-Bold';
 }
 h1{
     font-size: 1.3em;
 }
-h3{
+h2{
     font-size: 1.1em ;
 }
-h4{
+h3{
     font-size: 1em;
 }
 p{
@@ -236,7 +236,7 @@ header>.menu_ordi{
     background-color: white;
    
 }
-.description_heb>h4{
+.description_heb>h3{
     margin-top: 0.8em;
     margin-bottom: 0;
 }
@@ -307,7 +307,7 @@ header>.menu_ordi{
     align-content: flex-start;
     justify-content: flex-start;
 }
-.description_pop_txt>h4{
+.description_pop_txt>h3{
     margin : 0;
 }  
 .description_pop_txt>p{
@@ -393,7 +393,7 @@ header>.menu_ordi{
     color: black;
     text-decoration: none;
 }
-.description_activite>h4{
+.description_activite>h3{
     margin-top: 1.2em;
 }
 
