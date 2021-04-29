@@ -81,7 +81,8 @@ h1{
     font-size: 1.7em;
 }
 h3{
-    font-size: 1.1em ;
+    margin-left: 1em;
+    font-size: 1.6em ;
 }
 h4{
     font-size: 0.95em;
@@ -144,22 +145,25 @@ h4{
 
 #mes_filtres{
     margin-left: 1em;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #filtres {
     display:flex;
-    margin-left: 1em;
     margin-top: 1em;
     margin-bottom: 1.5em;
+    margin-right: 1em;
     border: rgb(226, 225, 225) solid  2px;
     border-radius: 50px;
-    border-left: #DEEBFF solid 3px;
     max-height: 2.7em;
     width: fit-content;
+    
 }
 .mot{
     padding-left: 1em;
-    padding-right: 1.5em;
+    padding-right: 1em;
     padding-top: 0.5em;
 }
 #filtres>.fas{
@@ -240,15 +244,20 @@ h4{
     color: black;
     text-decoration: none;
     background-color: white;
-    border:white solid 3px; 
+    border: #f2f2f2 solid 3px; 
 }
 .description_heb>h4{
     font-size: 1.4em;
-    line-height: 0.1em;
+    line-height: 0em;
 }
 .description_heb>p{
     font-size: 1.2em;
+    line-height: 0em;
+}
+
+.description_heb>.stars{
     line-height: 0.1em;
+    margin-bottom: 2em;
 }
 .alive_stars{
     color: #0065FC;
@@ -296,20 +305,41 @@ h4{
     object-fit: cover;
 }
 .description_pop{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
     padding-left: 1em;
     padding-right: 1em;
     width: 60%;
     height: 100%;
     line-height: 1.3em;
     color: black;
-    text-decoration: none;
+    text-decoration: none;  
+    padding-top: 0;
+    margin-top: 0;
     background-color: white;
+}
+.description_pop_txt{
+    height: 80%;
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
 }
-.description_pop>p{
-    font-size: 0.9em;
-    line-height: 0.1em;
+.description_pop_txt>h4{
+    font-size: 1.4em;
+    margin-left : 0.5em;
+    margin-bottom: 0;
+}  
+.description_pop_txt>p{
+    margin-left : 0.5em;
+    margin-btop: 0;
+}    
+
+.description_pop>.stars{
+    margin-left : 0.5em;
+    align-self: flex-start; 
+    font-size: 0.95em;
 }
 
 
@@ -318,7 +348,7 @@ h4{
 
 #activites{
     order: 3;
-    margin-top: 5em;
+    margin-top: 1em;
     height: fit-content;
     border-radius: 20px;
     justify-content: space-between;
@@ -326,10 +356,13 @@ h4{
     color: black ;
     text-decoration: none;
     flex-wrap: wrap;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 #titre_activites{
     padding-left: 1em;
     width: 100%;
+    margin-bottom: 1em;
 }
 .a_voir_100,.a_voir_66,.a_voir_33,.a_voir_50{
     width: 100%;
@@ -339,6 +372,7 @@ h4{
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    margin-bottom: 1.5em;
 }
 
 
@@ -353,23 +387,32 @@ h4{
 }
 
 .description_activite{
-    padding-top: 0.8em;
     margin-left: 1em;
     height: 3.5em;
     background-color: white;
     color: black;
     text-decoration: none;
+    font-size: 1.3em;
 }
 /*_________Footer__________*/
 footer{
-    margin-top: 5em;
+    margin-top: 2.5em;
+    padding-top: 2em;
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
     flex-wrap: wrap;
 }
-
+footer h3{
+    font-size: 1.25em;
+    margin-bottom: 0.2em;
+    margin-left: 0;
+}
+footer ul {
+    margin-bottom: 1em;
+}
 footer li{
     list-style: none;
     line-height: 2em;
+    font-size: 1.3em;
 }
