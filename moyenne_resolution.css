@@ -134,9 +134,10 @@ header>.menu_ordi{
 
 #mes_filtres{
     margin-left: 1em;
+    display: inline;
 }
 
-#filtres {
+.filtres {
     display: inline-block;
     margin-left: 1em;
     margin-top: 1em;
@@ -150,7 +151,7 @@ header>.menu_ordi{
     padding-left: 1em;
     padding-right: 1.5em;
 }
-#filtres>.fas{
+.filtres>.fas{
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 50%;
@@ -160,7 +161,7 @@ header>.menu_ordi{
     right: 0.15em;
 }
 
-#filtres:hover {
+.filtres:hover {
     background-color: #DEEBFF;
 }
 

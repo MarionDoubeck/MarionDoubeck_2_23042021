@@ -150,7 +150,7 @@ h4{
     flex-wrap: wrap;
 }
 
-#filtres {
+.filtres {
     display:flex;
     margin-top: 1em;
     margin-bottom: 1.5em;
@@ -166,7 +166,7 @@ h4{
     padding-right: 1em;
     padding-top: 0.5em;
 }
-#filtres>.fas{
+.filtres>.fas{
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 50%;
@@ -178,7 +178,7 @@ h4{
     right: 0.1em;
 }
 
-#filtres:hover {
+.filtres:hover {
     background-color: #DEEBFF;
 }
 
