@@ -266,7 +266,7 @@ header>.menu_ordi{
 #titre_pop{
     padding-top: 1em;
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
 }
 
