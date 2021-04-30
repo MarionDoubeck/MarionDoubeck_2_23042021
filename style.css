@@ -242,6 +242,10 @@ header>.menu_ordi{
     margin-top: 0.8em;
     margin-bottom: 0;
     max-height: 1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
 }
 .description_heb>p{
     margin-top: 0.2em;
