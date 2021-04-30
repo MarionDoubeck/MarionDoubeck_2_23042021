@@ -181,6 +181,13 @@ h3{
 .filtres:hover {
     background-color: #DEEBFF;
 }
+#nombre_log{
+    display: flex;
+    line-height: 1em;
+}
+#nb_tx{
+    padding-left: 1em;
+}
 
 #info{
     color: white;
@@ -191,9 +198,7 @@ h3{
     border-style: solid;    
     margin-bottom: 1.3em;
 }
-#nombre_log{
-    line-height: 0.1em;
-}
+
 
 /*______________________________________*/
 
@@ -207,6 +212,9 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+.hebergements_mrs>.ligne{
+    font-size: 1.2em;
 }
 .les_plus_populaires{
     display: flex;
