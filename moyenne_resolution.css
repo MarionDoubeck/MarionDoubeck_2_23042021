@@ -1,3 +1,6 @@
+body{
+    margin:0;
+}
 @font-face {
     font-family: 'Raleway-Regular';
     src: url('police/static/Raleway-Regular.ttf');
@@ -11,10 +14,7 @@
     text-decoration: none;
     font-family: 'Raleway-Regular', sans-serif;
 }
-main{
-    margin-left: 2em;
-    margin-right: 3em;
-}
+
 .ligne{
     width: 100%;
 }
@@ -36,6 +36,9 @@ p{
 /*___________________________________________________________________*/
 
 header{
+    width: 80%;
+    padding-left: 2em;
+    padding-right: 2em;
     display: flex;
     justify-content: space-between;
 }
@@ -62,7 +65,7 @@ header>.menu_ordi{
     color: black;
     text-decoration: none;
     padding-left: 2em;
-    padding-right: 2em;
+    padding-right: 4em;
 }
 #menu_heb:hover{
     color: #0065FC;
@@ -73,14 +76,14 @@ header>.menu_ordi{
     border-top:  #0065FC solid 3px;
 }
 
-.inscription{
-    margin-left: 2em;
-}
 #inscription{
     color:#0065FC;
     text-decoration: none; 
 }
 #section1{
+    width: 80%;
+    padding-left: 2em;
+    padding-right: 2em;
     margin-top: 2.6em;
 }
 #titre{
@@ -133,32 +136,33 @@ header>.menu_ordi{
 /*___________filtres______________*/
 
 #mes_filtres{
-    margin-left: 1em;
-    display: inline;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .filtres {
-    display: inline-block;
-    margin-left: 1em;
-    margin-top: 1em;
-    margin-bottom: 1.5em;
+    display:flex;
+    margin-top: 0.8em;
+    margin-right: 0.5em;
     border: rgb(226, 225, 225) solid  2px;
     border-radius: 50px;
-    border-left: #DEEBFF solid 3px;
-    max-height: 2.75em;
+    max-height: 2.7em;
+    width: 30vw;
 }
 .mot{
-    padding-left: 1em;
-    padding-right: 1.5em;
+    align-self: center;
 }
 .filtres>.fas{
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 50%;
     padding: 1em;
+    height: 1em;
+    width: 1em;
     position: relative;
     bottom: 0.15em;
-    right: 0.15em;
+    right: 0.1em;
 }
 
 .filtres:hover {
@@ -184,22 +188,19 @@ header>.menu_ordi{
     justify-content: space-between;
     align-content: space-between;
     line-height: 0.2em;
-    padding-right: 2em;
 }
  
 .hebergements_mrs{
-    background-color:#f2f2f2;
     border-radius: 20px;
     justify-content: space-around;
     margin-top: 2em;
 }
 .les_plus_populaires{
     background-color:#f2f2f2;
-    border-radius: 20px;
 }
 
 .hebergements_mrs{  
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     padding-left: 2em;
@@ -275,12 +276,12 @@ header>.menu_ordi{
 }
 
 .hotel_pop{
-    width:100%;
+    width:90%;
     border-radius: 20px;
     border:white 5px solid;
     display: flex;  
     overflow: hidden;
-    margin: 1em;
+    margin-bottom: 1em;
 }
 
 .photo_pop{
@@ -335,7 +336,7 @@ header>.menu_ordi{
     text-decoration: none;
 }
 #titre_activites{
-    padding-left: 1em;
+    padding-left: 2em;
     width: 100%;
 }
 #toutes-activites{
@@ -344,7 +345,6 @@ header>.menu_ordi{
     flex-wrap: wrap;
     justify-content: space-between;
     flex-basis: 10em;
-    padding-left: 4em;
 }
 #toutes-activites>a{
     width: 40%;

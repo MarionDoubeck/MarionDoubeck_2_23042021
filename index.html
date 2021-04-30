@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <script src="https://kit.fontawesome.com/7fd07d27c0.js" crossorigin="anonymous"></script>
         <title>Prototype Reservia</title>
-        <link rel="stylesheet" media="screen and (min-width: 1151px)" href="style.css">
-        <link rel="stylesheet" media="screen and (min-width: 641px) and (max-width: 1150px)" href="moyenne_resolution.css" />
-        <link rel="stylesheet" media="screen and (max-width: 640px)" href="petite_resolution.css" />
+        <link rel="stylesheet" media="screen and (min-width: 1038px)" href="style.css">
+        <link rel="stylesheet" media="screen and (min-width: 415px) and (max-width: 1037px)" href="moyenne_resolution.css" />
+        <link rel="stylesheet" media="screen and (max-width: 414px)" href="petite_resolution.css" />
     </head>
 <body>
 <main>
@@ -47,7 +47,7 @@
             <div id="mes_filtres">
                 <div class="filtres">
                     <span class="fas fa-money-bill-wave"></span>
-                    <strong class="mot" >Économique</strong>
+                    <strong class="mot" >Economique</strong>
                 </div>
                 <div class="filtres">
                     <span class="fas fa-child"></span>
@@ -65,7 +65,7 @@
         </div>
 
         <!-- message (500 pub ou reel algo?) -->
-        <p id="nombre_log">
+        <p>
             <i id="info" class="fas fa-info-circle"></i>
             Plus de 500 logements sont disponibles dans cette ville
         </p>
@@ -91,9 +91,11 @@
                         <span class="fas fa-star" ></span>
                         <span class="fas fa-star" ></span>
                     </span>
-                    <span class="dead_stars">
-                        <span class="fas fa-star" ></span>
-                    </span>
+                    <div class="stars">
+                        <span class="dead_stars">
+                            <span class="fas fa-star" ></span>
+                        </span>
+                    </div>
                 </div>
             </a>
             <a class="hotel_heb" href="#">
@@ -103,13 +105,15 @@
                 <div class="description_heb">
                     <h3> Hôtel du port</h3>
                     <p>Nuit à partir de 52€</p>
-                    <span class="alive_stars">
-                        <span class="fas fa-star" ></span>
-                        <span class="fas fa-star" ></span>
-                        <span class="fas fa-star" ></span>
-                        <span class="fas fa-star" ></span>
-                        <span class="fas fa-star" ></span>
-                    </span>
+                    <div class="stars">
+                        <span class="alive_stars">
+                            <span class="fas fa-star" ></span>
+                            <span class="fas fa-star" ></span>
+                            <span class="fas fa-star" ></span>
+                            <span class="fas fa-star" ></span>
+                            <span class="fas fa-star" ></span>
+                        </span>
+                    </div>
                 </div>
             </a>
             <a class="hotel_heb" href="#">
@@ -119,15 +123,17 @@
                 <div class="description_heb">
                     <h3> Hôtel Les mouettes</h3>
                     <p>Nuit à partir de 76€</p>
-                    <span class="alive_stars">
-                        <span class="fas fa-star" ></span>
-                        <span class="fas fa-star" ></span>
-                        <span class="fas fa-star" ></span>
-                        <span class="fas fa-star" ></span>
-                    </span>
-                    <span class="dead_stars">
-                        <span class="fas fa-star" ></span>
-                    </span>
+                    <div class="stars">
+                        <span class="alive_stars">
+                            <span class="fas fa-star" ></span>
+                            <span class="fas fa-star" ></span>
+                            <span class="fas fa-star" ></span>
+                            <span class="fas fa-star" ></span>
+                        </span>
+                        <span class="dead_stars">
+                            <span class="fas fa-star" ></span>
+                        </span>
+                    </div>
                 </div>
             </a>
             <a class="hotel_heb" href="#">
@@ -137,15 +143,17 @@
                 <div class="description_heb">
                     <h3> Hôtel de la mer</h3>
                     <p>Nuit à partir de 46€</p>
-                    <span class="alive_stars">
-                        <span class="fas fa-star" ></span>
-                        <span class="fas fa-star" ></span>
-                        <span class="fas fa-star" ></span>
-                    </span>
-                    <span class="dead_stars">
-                        <span class="fas fa-star" ></span>
-                        <span class="fas fa-star" ></span>
-                    </span>
+                    <div class="stars">
+                        <span class="alive_stars">
+                            <span class="fas fa-star" ></span>
+                            <span class="fas fa-star" ></span>
+                            <span class="fas fa-star" ></span>
+                        </span>
+                        <span class="dead_stars">
+                            <span class="fas fa-star" ></span>
+                            <span class="fas fa-star" ></span>
+                        </span>
+                    </div>
                 </div>
             </a>
             <a class="hotel_heb" href="#">
@@ -155,15 +163,17 @@
                 <div class="description_heb">
                     <h3> Auberge Le Panier</h3>
                     <p>Nuit à partir de <strong>23€</strong></p>
-                    <span class="alive_stars">
-                        <span class="fas fa-star" ></span>
-                        <span class="fas fa-star" ></span>
-                        <span class="fas fa-star" ></span>
-                        <span class="fas fa-star" ></span>
-                    </span>
-                    <span class="dead_stars">
-                        <span class="fas fa-star" ></span>
-                    </span>
+                    <div class="stars">
+                        <span class="alive_stars">
+                            <span class="fas fa-star" ></span>
+                            <span class="fas fa-star" ></span>
+                            <span class="fas fa-star" ></span>
+                            <span class="fas fa-star" ></span>
+                        </span>
+                        <span class="dead_stars">
+                            <span class="fas fa-star" ></span>
+                        </span>
+                    </div>
                 </div>
             </a>
             <a class="hotel_heb" href="#">
@@ -173,13 +183,15 @@
                 <div class="description_heb">
                     <h3> Hôtel chez Amina </h3>
                     <p>Nuit à partir de 96€</p>
-                    <span class="alive_stars">
-                        <span class="fas fa-star" ></span>
-                        <span class="fas fa-star" ></span>
-                        <span class="fas fa-star" ></span>
-                        <span class="fas fa-star" ></span>
-                        <span class="fas fa-star" ></span>
-                    </span>
+                    <div class="stars">
+                        <span class="alive_stars">
+                            <span class="fas fa-star" ></span>
+                            <span class="fas fa-star" ></span>
+                            <span class="fas fa-star" ></span>
+                            <span class="fas fa-star" ></span>
+                            <span class="fas fa-star" ></span>
+                        </span>
+                    </div>
                 </div>
             </a>
             <h2 class="ligne">Afficher plus</h2>
@@ -358,3 +370,15 @@
 
 </body>
 </html>
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

@@ -6,7 +6,9 @@
     font-family: 'Raleway-Bold';
     src: url('police/static/Raleway-Bold.ttf');
 }
-
+body{
+    margin:0;
+}
 *{
     text-decoration: none;
     font-family: 'Raleway-Regular', sans-serif;
@@ -214,9 +216,9 @@ header>.menu_ordi{
     height: 31%;
     border-radius: 20px;
     border: white 5px solid;
-    overflow: hidden;   
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .photo_heb{
     height: 60%;
@@ -228,29 +230,22 @@ header>.menu_ordi{
     object-fit: cover;
 }
 .description_heb{
-    width: 100%;
     height: 40%;
     line-height: 1em;
     color: black;
     text-decoration: none;
     background-color: white;
-   
+    padding-left: 1em;
+    padding-right: 1em;
 }
-.description_heb>h3{
+.description_heb h3{
     margin-top: 0.8em;
     margin-bottom: 0;
+    max-height: 1em;
 }
 .description_heb>p{
     margin-top: 0.2em;
     margin-bottom: 0.4em;
-}
-.alive_stars{
-    color: #0065FC;
-    font-size: 0.7em;
-}
-.dead_stars{
-    color: #f2f2f2;
-    font-size: 0.7em;
 }
 /*____________________________populaires________________________________*/
 
@@ -314,11 +309,18 @@ header>.menu_ordi{
     margin-top: 0;
 }    
 
-.description_pop>.stars{
+.stars{
     align-self: flex-start; 
     font-size: 0.95em;
 }
-
+.alive_stars{
+    color: #0065FC;
+    font-size: 0.7em;
+}
+.dead_stars{
+    color: #f2f2f2;
+    font-size: 0.7em;
+}
 /*________________________Activités____________________*/
 
 #activites{
@@ -350,6 +352,7 @@ header>.menu_ordi{
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    justify-content: space-between;
 }
 .a_voir_100{
     height: 100%;
@@ -365,11 +368,13 @@ header>.menu_ordi{
 }
 .photo_activite{
     overflow: hidden;
+    height: 100%;
 }
 .a_voir_100>.photo_activite>img{
     height: 115%;
     width: 210%;
     object-position: -9.5em 0;
+    object-fit: cover;
 }
 .a_voir_66>.photo_activite>img{
     width: 100%;
