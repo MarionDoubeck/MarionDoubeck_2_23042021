@@ -15,9 +15,6 @@ body{
     font-family: 'Raleway-Regular', sans-serif;
 }
 
-.ligne{
-    width: 100%;
-}
 strong,h1, h2, h3{
     font-family: 'Raleway-Bold';
 }
@@ -332,7 +329,6 @@ header>.menu_ordi{
 }
 #titre_activites{
     padding-left: 2em;
-    width: 100%;
 }
 #toutes-activites{
     display: flex;
@@ -400,14 +396,13 @@ header>.menu_ordi{
 /*_________________________Footer____________________*/
 
 footer{
-    width: 100%;
     margin-top: 1em;
     display: flex;
     background-color: #f2f2f2;
 }
 
 footer>div{
-    width: 33%;
+    width: 30%;
 }
 
 footer li{
